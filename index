@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuji Mioblock | Çocuklar İçin Premium Miyop Kontrol Camı</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        fuji: {
+                            50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4',
+                            300: '#5eead4', 400: '#2dd4bf', 
+                            500: '#0f766e', /* Daha koyu zümrüt */
+                            600: '#0f766e', /* Daha koyu zümrüt */
+                            700: '#0f766e', /* Daha koyu zümrüt */
+                            800: '#115e59', 
+                            900: '#134e4a', 950: '#042f2e', 
+                        },
+                        brand: '#0f766e' /* Marka Rengi - Daha koyu zümrüt yeşili */
+                    },
+                    boxShadow: {
+                        'premium': '0 20px 40px -15px rgba(15, 118, 110, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+        /* Fontların her yerde aynı olmasını garantiye almak için global ayar */
+        * { font-family: 'Inter', sans-serif !important; }
+        
+        .tech-dark-gradient { background: radial-gradient(circle at 50% 0%, #115e59 0%, #042f2e 70%, #000000 100%); }
+        .lens-curve { border-radius: 40px; }
+        .fade-up { animation: fadeUp 1s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+        
+        /* Yumuşak geçiş gölgeleri (Tüm tarayıcılarda sorunsuz çalışır) */
+        .fade-bottom {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        .fade-top-bottom {
+            mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+        }
+        
+        /* Metin okunabilirliği için gölge */
+        .text-shadow-strong { text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 selection:bg-brand selection:text-white font-normal">
+
+    <nav class="bg-white/95 backdrop-blur-xl border-b border-gray-100 fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center flex-shrink-0 mr-4">
+                <a href="#" class="transition-opacity hover:opacity-80 duration-300">
+                    <img src="https://i.ibb.co/VYL0VCd1/fuji-fujimioblock-logo.webp" alt="Fuji Mioblock Logo" class="h-8 md:h-10 object-contain w-auto">
+                </a>
+            </div>
+            <!-- Menü aralıkları dar ekranlar için düzenlendi -->
+            <div class="hidden md:flex space-x-6 lg:space-x-8 text-[14px] lg:text-[15px] font-bold text-gray-700 justify-end w-full">
+                <a href="#sorun" class="hover:text-brand transition-colors duration-200 whitespace-nowrap">Miyopi Yönetimi</a>
+                <a href="#teknoloji" class="hover:text-brand transition-colors duration-200 whitespace-nowrap">Myo Free-Form Teknolojisi</a>
+                <a href="#klinik" class="hover:text-brand transition-colors duration-200 whitespace-nowrap">Klinik Veriler</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-fuji-50/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+                
+                <div class="flex flex-col items-start text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white text-brand text-xs font-bold tracking-widest uppercase mb-8 border border-fuji-200 shadow-sm fade-up">
+                        <span class="w-2 h-2 rounded-full bg-brand animate-pulse"></span>
+                        YENİ NESİL MİYOP KONTROLÜ
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl text-gray-900 tracking-tight leading-[1.1] mb-6 fade-up delay-100 font-bold">
+                        Çocuğunuzun net görüşünü <br class="hidden lg:block"/>
+                        <span class="text-brand">geleceğe taşıyın.</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-gray-600 mb-10 max-w-xl leading-relaxed fade-up delay-200">
+                        Avrupa'da kanıtlanmış <strong class="text-gray-900">Myo Free-Form (MPDL)</strong> teknolojisi ile miyop ilerlemesini ve eksenel göz uzamasını yavaşlatın. Sıradan camların ötesinde bir koruma.
+                    </p>
+                </div>
+
+                <div class="relative lg:ml-10 fade-up delay-200 hidden sm:block">
+                    <div class="absolute inset-0 bg-brand/20 rounded-full blur-3xl transform translate-x-10 translate-y-10 scale-90 -z-10"></div>
+                    <div class="relative rounded-[2.5rem] h-[500px] w-full shadow-2xl border-4 border-white overflow-hidden bg-fuji-50 flex items-center justify-center">
+                        <img src="https://i.ibb.co/xq3cHCHr/Gemini-Generated-mage-z3kxibz3kxibz3kx.png" alt="Vizyoner kız çocuğu" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="sorun" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="rounded-[2.5rem] shadow-lg h-[450px] w-full bg-fuji-50 flex items-center justify-center overflow-hidden">
+                        <img src="https://i.ibb.co/S4D4qDjY/Gemini-Generated-mage-osrjp7osrjp7osrj.png" alt="Miyopi ekran süresi ve ders çalışan çocuk" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="text-brand font-bold tracking-widest uppercase text-xs mb-4 block">Çocukluk Çağı Miyopisini Devrimcileştirmek</span>
+                    <h2 class="text-3xl lg:text-4xl text-gray-900 mb-6 leading-tight font-bold">
+                        Kimler <span class="text-brand">Fuji Mioblock</span> kullanmalı?
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Miyopi okul yıllarında gelişmeye başlar ve erken yaşlarda ortaya çıkmasının, gelecekteki yüksek miyopi için en büyük haberci olduğu kanıtlanmıştır. İlerleme şansını sınırlamak için erken tedavi çok önemlidir. <strong class="text-gray-900">Tedavi, miyopinin ilk semptomları görülür görülmez başlamalıdır.</strong>
+                    </p>
+                    <div class="bg-fuji-50 p-6 rounded-2xl border border-fuji-200 mb-6">
+                        <h4 class="font-bold text-gray-900 mb-2">Uzmanların Ortak Görüşü:</h4>
+                        <p class="text-gray-700">
+                            Dünya çapında 3195 katılımcıyla yapılan röportaj çalışmasına göre, uzmanlar <strong class="text-brand">-0.50D ile -1.00D</strong> arasında kırılma kusuru bulunan ve minimum <strong class="text-brand">6 yaşında</strong> olan çocukların miyopi yönetim gözlükleri için uygun adaylar olduğunu düşünüyor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Fuji Mioblock'un Faydaları</h2>
+                <p class="text-gray-600">Fuji Mioblock, sadece ilerlemeyi durdurmakla kalmaz, çocuğun günlük yaşam kalitesini maksimuma çıkarır.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Fayda 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-200 text-center hover:shadow-premium transition-shadow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Yavaşlatılmış İlerleme</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Çocukluk çağı miyopisinin daha yavaş ilerlemesi: Gözün eksenel büyümesini azaltır.</p>
+                </div>
+                <!-- Fayda 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-200 text-center hover:shadow-premium transition-shadow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Mükemmel Görüş</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Merkezdeki net görüş alanı sayesinde pürüzsüz görüş kalitesi sağlar.</p>
+                </div>
+                <!-- Fayda 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-200 text-center hover:shadow-premium transition-shadow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Gelişmiş Konfor</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Tıpkı sıradan (standart) bir tek odaklı (SV) lens gibi gelişmiş konfor sunar.</p>
+                </div>
+                <!-- Fayda 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-200 text-center hover:shadow-premium transition-shadow">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Üstün Estetik</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Tedavi alanının lens yüzeyinde estetik olarak hiçbir görünür izi yoktur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="teknoloji" class="py-32 tech-dark-gradient text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Nasıl Çalışır? Teorik Temel -->
+            <div class="text-center max-w-4xl mx-auto mb-20">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm mb-4 block">NASIL ÇALIŞIR?</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Teorik Temel: Hipermetropik Defokus</h2>
+                <p class="text-xl text-gray-200 mb-8 font-bold">Fuji Mioblock miyopi yönetim lensi, hipermetropik defokus teorisi üzerine inşa edilmiştir.</p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Standart negatif lensler ışığın periferik retina düzleminin arkasına odaklanmasına neden olur. Bu, gözün daha da uzamasını uyarabilir ve zamanla miyopiyi kötüleştirebilir. Buna karşılık, periferide (çevrede) pozitif güce sahip bir lens, ışığın doğrudan retina düzlemine doğru bir şekilde odaklanmasını sağlar.
+                </p>
+            </div>
+
+            <!-- Isı Haritası Bloğu -->
+            <div class="bg-white rounded-3xl p-8 mb-20 shadow-premium max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 text-gray-800">
+                <!-- Sol Görsel (Isı Haritası) -->
+                <div class="lg:w-1/2 flex justify-center">
+                    <img src="https://i.ibb.co/1GL2jd7r/isi-haritasi2.png" alt="isi haritasi2" border="0"class="max-w-full h-auto drop-shadow-lg object-contain">
+                </div>
+                <!-- Sağ Metin -->
+                <div class="lg:w-1/2">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Myo Serbest Biçimli Teknoloji</h3>
+                    <p class="text-gray-600 leading-relaxed text-[15px] mb-4">
+                        Myo Free-Form Teknolojisi, çocuk gözlerindeki eksenel uzamanın ilerlemesini etkili bir şekilde yavaşlatan gelişmiş bir yeniliktir. Bunu, lensin arka yüzeyine, retinanın doğal asimetrisine göre kalibre edilmiş asimetrik pozitif odaklanma bozukluğu (defocus) entegre ederek başarır. Bu, tüm ışığın retina düzlemine odaklanmasını sağlayarak, göz uzamasını etkili bir şekilde engeller ve miyopinin ilerlemesini yavaşlatır.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-[15px] mb-4">
+                        Myo Serbest Biçimli Teknoloji iki bölge içerir. Merkezde, dikey eksende görüşü iyileştiren <strong class="font-bold text-gray-900">oval (ovoidal) bir şekle sahip, 7 mm çapında net bir görüş alanı</strong> bulunur.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-[15px]">
+                        Bu ilk bölgenin etrafında, stratejik olarak <strong class="text-brand font-bold">+1.8D ve +1.5D</strong> (şakak ve burun bölgeleri) ve merceğin alt kısmında <strong class="text-brand font-bold">+2.0D</strong> ile kalibre edilmiş, asimetrik çevresel odaklanma bozukluğuna (<strong class="font-bold text-gray-900">Asimetrik Miyopik Periferik Defokus Lensleri - MPDL</strong>) sahip miyopi tedavi bölgesi bulunmaktadır. Birlikte ele alındığında, bu dikkatlice hesaplanmış bölgeler, çocuklara mümkün olan en iyi görsel deneyimi sunarken aynı zamanda miyopi ilerlemesini de tedavi etmektedir.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Lens Üretim Bloğu -->
+            <div class="bg-white rounded-3xl p-8 shadow-premium max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 mt-20 text-gray-800">
+                <!-- Sol Metin (Maddeler) -->
+                <div class="lg:w-1/2">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6 leading-tight">Küresel ham maddeler kullanılarak serbest biçimli teknoloji ile üretilmiştir.</h3>
+                    <ul class="space-y-5 text-gray-600 text-[15px]">
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand font-bold text-lg leading-none">•</span> Eşsiz çok yönlülük, istenilen her türlü malzemeyle üretim yapılmasına olanak tanır.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand font-bold text-lg leading-none">•</span> Laboratuvar maliyetlerinde ve lens stoğunda azalma. Özel yarı mamul ürünlere ihtiyaç duyulmaz.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand font-bold text-lg leading-none">•</span> İnce ve estetik bir görünüm için son derece ince (high-index) lens seçenekleri.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand font-bold text-lg leading-none">•</span> Kusursuz derecede pürüzsüz ve tutarlı bir fiziksel yüzey (<strong class="font-bold text-gray-900">Progressive smooth positive power lens</strong>), çocuğun giymesi için rahat ve doğal.
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sağ Görsel (Lens) -->
+                <div class="lg:w-1/2 flex justify-center">
+                    <img src="https://i.ibb.co/Ndv42sGk/Ekran-Resmi-2026-07-27-15-44-07.png" alt="Ekran Resmi 2026 07 27 15 44 07" border="0">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geçiş Fotoğrafı (Doğada Çocuklar) -->
+    <section class="relative h-[500px] md:h-[600px] w-full overflow-hidden flex items-center justify-center bg-gray-50">
+        <!-- Arka plan resmi ve yumuşak geçiş gölgeleri -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://i.ibb.co/v4rF8gCq/Gemini-Generated-mage-u7icbu7icbu7icbu.png" alt="Doğada oynayan çocuklar" class="w-full h-full object-cover object-center fade-top-bottom">
+            <!-- Görselin üzerine karanlık bir katman atarak beyaz metnin okunabilirliğini artırıyoruz -->
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <!-- Metin (Okunabilirliği artırılmış kalın gölgeli) -->
+        <div class="relative z-20 text-center text-white max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 text-shadow-strong">Net bir vizyon, özgür bir gelecek.</h2>
+            <p class="text-xl md:text-2xl text-gray-100 text-shadow-strong">Miyopi, çocuğunuzun dünyayı keşfetmesine engel olmasın.</p>
+        </div>
+    </section>
+
+    <!-- Klinik Araştırma Sonuçları -->
+    <section id="klinik" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand font-bold tracking-widest uppercase text-xs mb-4 block">KLİNİK KANIT</span>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">Bilime dayalı, kanıtlanmış sonuçlar</h2>
+            </div>
+            
+            <!-- Eksenel Uzama Grafiği ve Açıklamalar (İki Kolon) -->
+            <div class="flex flex-col lg:flex-row gap-16 items-center mb-24">
+                <!-- Sol Görsel (Eksenel Uzama Çizgi Grafiği) -->
+                <div class="lg:w-1/2 flex justify-center">
+                     <img src="https://i.ibb.co/GrRmmpF/Ekran-Resmi-2026-07-27-15-45-40.png" alt="Ekran Resmi 2026 07 27 15 45 40" border="0">
+                </div>
+                <!-- Sağ Metin (Klinik Araştırma Sonuçları) -->
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 leading-tight">Kanıtlanmış Klinik Araştırma Sonuçları</h3>
+                    <div class="space-y-6 text-gray-600 leading-relaxed text-[15px]">
+                        <p>
+                            Fuji Mioblock'un etkinliği, özellikle Avrupa popülasyonunda gerçekleştirilen ilk <strong class="font-bold text-gray-900">randomize, çift kör (double-blind)</strong> çalışmada değerlendirilmiştir. Çalışmaya 6-12 yaş arası çocuklar katılmış ve tedavi bir yıl boyunca devam etmiştir.
+                        </p>
+                        <p>
+                            Çalışma, dikkat çekici ön sonuçlar ortaya koydu. Eksenel uzunluk artışı ile ölçülen göz uzaması, bu lensi kullananlarda standart tek odaklı lens (Single Vision) kullananlara kıyasla <strong class="font-bold text-gray-900">12 ay sonra %39, 24 ay sonra ise %29</strong> daha düşük bulundu.
+                        </p>
+                        <p class="font-bold text-gray-900 text-lg border-l-4 border-brand pl-4">
+                            Analizler, yenilikçi lens teknolojimizi kullananların, tek odaklı lens kullananlara kıyasla gözlerinde belirgin derecede daha az uzama yaşadığını göstermektedir.
+                        </p>
+                        <p>
+                            Özellikle, memnuniyet puanlarının tek odaklı lens kullanılarak elde edilenlerle aynı düzeyde olduğu tespit edildi; bu da çocukların yenilikçi lens çözümümüze sorunsuz bir şekilde uyum sağladığını vurguluyor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memnuniyet Pasta Grafikleri (Alt Bölüm) -->
+            <div class="pt-16 border-t border-gray-100 text-center">
+                 <h3 class="text-2xl font-bold text-gray-900 mb-12">Kullanıcı Memnuniyet Oranları</h3>
+                 <img src="https://i.ibb.co/1fKx25qd/grafik-memnuniyet.png" alt="Müşteri Memnuniyet Oranları 3'lü Grafik" class="mx-auto max-w-5xl object-contain w-full h-auto mix-blend-multiply">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-16 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <img src="https://i.ibb.co/VYL0VCd1/fuji-fujimioblock-logo.webp" alt="Fuji Mioblock Logo" class="h-10 mx-auto mb-8 opacity-80 grayscale transition-all hover:grayscale-0">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Çocukluk çağı miyopisinde yeni standart.</h2>
+            <div class="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-bold">
+                <p>© 2026 Fuji Optical Lenses. Tüm hakları saklıdır.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-brand transition-colors">Gizlilik Politikası</a>
+                    <a href="#" class="hover:text-brand transition-colors">Kullanım Şartları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
